@@ -1,14 +1,6 @@
 #!/usr/bin/env bash
-#Creating a script that uses a nested loop
-hour=0
-while [ $hour -le 12 ]
+#Creating a script that lists files
+for i in *
 do
-	echo "Hour: $hour"
-	minute=1
-	while [ $minute -lt 60 ]
-	do
-		echo "$minute"
-		((minute++))
+		echo "$i" | cut -f 2- -d '-'
 	done
-	((hour++))
-done
