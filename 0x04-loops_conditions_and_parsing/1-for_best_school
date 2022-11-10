@@ -1,15 +1,13 @@
 #!/usr/bin/env bash
 
-# This script is displaying "Holberton School" 10 times
+# Script that displays Best School 10 times
 
-i=0
-
-for i in {1..10}
+for i in {0..9}
 
 do
 
-    echo "Best School"
+	echo "Best School"
 
 done
 
-i=$i
+export i

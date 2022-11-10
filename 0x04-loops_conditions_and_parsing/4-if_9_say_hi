@@ -1,25 +1,23 @@
-#!/usr/bin/env bash
+cript that displays School 10 times,  but for the 9th iteration, displays Best School and then Hi on a new line
 
-# This script is displaying "Holberton School" 10 times
+i=0
 
-i=10
-
-while [ "$i" -gt 0 ]
+while [ $i -le 9 ]
 
 do
 
-    echo "Best School"
+	echo "Best School"
 
-    if [ "$i" -eq 2 ]
+	if [ $i -eq 8 ]
 
-    then
+	then
 
-        echo "Hi"
+		echo "Hi"
 
-    fi
+	fi
 
-    i=$((i - 1))
+	((i++))
 
 done
 
-i=$i
+
